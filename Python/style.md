@@ -115,6 +115,8 @@ obj = myclass.ConflictClass()
 
 模块基本的“dunder”名称，例如`__all__`, `__version__`, `__author__`应该被放置在文档字符串的后面，除了`from __future__ import XXX`语句之外，所有导入语句的前面。
 
+“dunder”是 __double underscore__ 的缩写，在 Python 中代表一些使用双下划线开头的保留关键字(例如`__all__`, `__version__`, `__author__`等)，参见 [Python Wiki](https://wiki.python.org/moin/DunderAlias)。
+
 ```
 """This is the example module.
 
