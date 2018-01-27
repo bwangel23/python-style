@@ -42,7 +42,7 @@ class EUserGender(Enum):
 
 通过上面的定义，`EUserGender`也成了一种类型，我们也可以在类型注解中使用`EUserGender`类型。
 
-```
+```py
 def create_user(gender: EUserGender) -> dict:
     pass
 ```
@@ -57,11 +57,11 @@ __注意__: 不建议使用列表作为参数，列表是复合类型，可能�
 
 `List`的声明方式如下：
 
-```
+```py
 def func() -> [int]
 ```
 
-```
+```py
 from typing import List
 
 def func() -> List[int]
@@ -71,7 +71,7 @@ def func() -> List[int]
 
 `Tuple`多用于函数返回多个值情况。它的声明方式如下:
 
-```
+```py
 from typing import List, Tuple
 
 def func() -> Tuple[int, int]:
@@ -100,7 +100,7 @@ def func1() -> Dict[int, str]:
 
 有时候我们的方法需要返回多种类型，可以使用`Union`类型来声明。其使用方式如下所示:
 
-```
+```py
 from typing import Union
 
 def func1(arg1: int) -> Union[int, None]:
@@ -109,4 +109,3 @@ def func1(arg1: int) -> Union[int, None]:
     else:
         return arg1
 ```
-
